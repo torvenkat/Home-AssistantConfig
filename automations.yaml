@@ -1,0 +1,14 @@
+- id: '1563110470514'
+  alias: Turn lights for garbage indication
+  trigger:
+  - platform: template
+    value_template: '{{is_state_attr(''calendar.garbage'', ''message'', ''Recycling'')
+      }}'
+  condition: [] 
+  action:
+    service: light.turn_on
+    data:
+      brightness: 100
+      rgb_color: [255, 0, 0]
+      entity_id:
+        - light.hue_color_2

@@ -1,0 +1,63 @@
+#group:
+Security:
+  name: Security
+  icon: mdi:shield-home
+  entities:
+    - lock.van_door
+    - lock.garage_door
+    - cover.home
+kitchen_lights:
+  name: Kitchen
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.dining_light
+    - light.kitchen_lite    
+family_lights:
+  name: Family Room
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.light_panels_50_db_6f
+    - light.leviton_dzmx1_1lz_dimmer_level_2
+    - light.leviton_dzmx1_1lz_dimmer_level_3
+    - light.hue_color_2
+living_lights:
+  name: Living Room
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.living
+    - light.dining 
+    - light.hue_color_light_1
+hallway_lights:
+  name: Hallway
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.lux_white_1
+    - light.lux_white_2
+    - light.leviton_dzmx1_1lz_dimmer_level
+upstairs_lights:
+  name: Upstairs
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.caseta_r_wireless_in_wall_dimmer_2
+    - light.caseta_r_wireless_plug_in_lamp_dimmer
+    - light.caseta_r_wireless_in_wall_dimmer_3
+    - light.caseta_r_wireless_in_wall_dimmer
+basement_lights:
+  name: Basement
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.ecosmart_1
+    - light.ecosmart_2
+    - light.ecosmart_3
+    - light.ecosmart_4 
+    - light.ecosmart_5  
+    - light.ecosmart_6  
+    - light.ecosmart_7        
+outdoor_lights:
+  name: Outdoor
+  icon: mdi:lightbulb-outline
+  entities:
+    - light.cree1
+    - light.cree2 
+    - light.hue_w1
+    - light.hue_w2

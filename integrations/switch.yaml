@@ -1,0 +1,30 @@
+#switch:
+- platform: mqtt
+  name: "Air Freshner"
+  command_topic: "cmnd/tuyaoval/power"
+  state_topic: "stat/tuyaoval/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+  icon: mdi:flower
+
+- platform: mqtt
+  name: "Humidifier 1"
+  command_topic: "cmnd/humid1/POWER"
+  state_topic: "stat/humid1/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+  icon: mdi:water-percent  
+
+- platform: mqtt
+  name: "Humidifier 1"
+  command_topic: "cmnd/cesmart2/POWER"
+  state_topic: "stat/cesmart2/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+  icon: mdi:water-percent  

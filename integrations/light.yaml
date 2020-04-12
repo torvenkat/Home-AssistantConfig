@@ -1,0 +1,12 @@
+#light:
+- platform: decora_wifi
+  username: !secret decora_user
+  password: !secret decora_passwd   
+
+- platform: switch
+  name: Dining Light
+  entity_id: switch.breakfast_area
+
+- platform: switch
+  name: Kitchen Lite
+  entity_id: switch.kitchen 

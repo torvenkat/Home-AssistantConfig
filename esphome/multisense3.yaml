@@ -1,0 +1,32 @@
+esphome:
+  name: multisense3
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "vare4"
+  password: "999925cc29"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Multisense3 Fallback Hotspot"
+    password: "qbycL4G7I6VP"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+sensor:
+  - platform: dht
+    pin: D2
+    temperature:
+      name: "Garage Temperature"
+    humidity:
+      name: "Garage Humidity"
+    update_interval: 60s

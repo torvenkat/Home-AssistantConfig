@@ -1,0 +1,32 @@
+esphome:
+  name: multisense1
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "vare4"
+  password: "999925cc29"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Multisense2 Fallback Hotspot"
+    password: "seQ1wgnKFlLZ"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+sensor:
+  - platform: dht
+    pin: D2
+    temperature:
+      name: "Basement Temperature"
+    humidity:
+      name: "Basement Humidity"
+    update_interval: 60s

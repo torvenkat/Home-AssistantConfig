@@ -1,0 +1,35 @@
+
+- cal_id: torvare4@gmail.com
+  entities:
+  - device_id: torvare4_gmail_com
+    ignore_availability: true
+    name: torvare4@gmail.com
+    track: true
+
+- cal_id: r4k14mqeodq39i1gup63v41gu4@group.calendar.google.com
+  entities:
+  - device_id: garbage
+    ignore_availability: true
+    name: Garbage
+    track: true
+
+- cal_id: iopfdciapi6d30hmi76jg41hho@group.calendar.google.com
+  entities:
+  - device_id: iphone
+    ignore_availability: true
+    name: iPhone
+    track: true
+
+- cal_id: addressbook#contacts@group.v.calendar.google.com
+  entities:
+  - device_id: contacts
+    ignore_availability: true
+    name: Contacts
+    track: true
+
+- cal_id: en.canadian#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_canada
+    ignore_availability: true
+    name: Holidays in Canada
+    track: true

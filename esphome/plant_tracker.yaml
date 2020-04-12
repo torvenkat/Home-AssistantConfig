@@ -1,0 +1,53 @@
+esphome:
+  name: plant_tracker
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: "vare4"
+  password: "999925cc29"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Plant Tracker Fallback Hotspot"
+    password: "F845WZBUXoKC"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable OTA updates
+ota:
+
+# Enable Home Assistant API
+api:
+
+# Set up sensors
+esp32_ble_tracker:
+sensor:
+  - platform: xiaomi_hhccjcy01
+    mac_address: 'C4:7C:8D:6A:46:4F'
+    temperature:
+      name: "Dendrobium Temperature"
+    moisture:
+      name: "Dendrobium Moisture"
+    illuminance:
+      name: "Dendrobium Illuminance"
+    conductivity:
+      name: "Dendrobium  Soil Conductivity"
+    battery_level:
+      name: "Dendrobium  Battery Level"
+
+  - platform: xiaomi_hhccjcy01
+    mac_address: 'C4:7C:8D:60:70:32'
+    temperature:
+      name: "Jasmine Temperature"
+    moisture:
+      name: "Jasmine Moisture"
+    illuminance:
+      name: "Jasmine Illuminance"
+    conductivity:
+      name: "Jasmine Soil Conductivity"
+    battery_level:
+      name: "Jasmine Battery Level"      

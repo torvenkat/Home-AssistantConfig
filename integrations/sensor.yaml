@@ -1,0 +1,69 @@
+#sensor:
+- platform: environment_canada
+
+- platform: waqi
+  token: !secret waqi_token
+  locations: Toronto North, Ontario
+
+- platform: obihai
+  host: 192.168.10.130
+
+
+- platform: glances
+  host: 192.168.10.212
+  port: 61209
+  version: 3
+  resources:
+    - 'processor_load'
+    - 'memory_use_percent'
+    - 'disk_use_percent'
+  
+
+- platform: template
+  sensors:
+    switch_ge_fridge_amps:
+      friendly_name_template: "{{ ge_fridge}} Current"
+      value_template: '{{ states.switch.ge_fridge.attributes["current_a"] | float }}'
+      unit_of_measurement: 'A'
+    switch_ge_fridge_watts:
+      friendly_name_template: "{{ ge_fridge}} Current Consumption"
+      value_template: '{{ states.switch.ge_fridge.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+    switch_ge_fridge_total_kwh:
+      friendly_name_template: "{{ ge_fridge}} Total Consumption"
+      value_template: '{{ states.switch.ge_fridge.attributes["total_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+    switch_ge_fridge_volts:
+      friendly_name_template: "{{ ge_fridge}} Voltage"
+      value_template: '{{ states.switch.ge_fridge.attributes["voltage"] | float }}'
+      unit_of_measurement: 'V'
+    switch_ge_fridge_today_kwh:
+      friendly_name_template: "{{ ge_fridge}} Today's Consumption"
+      value_template: '{{ states.switch.ge_fridge.attributes["today_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+
+- platform: template
+  sensors:
+    switch_washing_machine_amps:
+      friendly_name_template: "{{ washing_machine}} Current"
+      value_template: '{{ states.switch.washing_machine.attributes["current_a"] | float }}'
+      unit_of_measurement: 'A'
+    switch_washing_machine_watts:
+      friendly_name_template: "{{ washing_machine}} Current Consumption"
+      value_template: '{{ states.switch.washing_machine.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+    switch_washing_machine_total_kwh:
+      friendly_name_template: "{{ washing_machine}} Total Consumption"
+      value_template: '{{ states.switch.washing_machine.attributes["total_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+    switch_washing_machine_volts:
+      friendly_name_template: "{{ washing_machine}} Voltage"
+      value_template: '{{ states.switch.washing_machine.attributes["voltage"] | float }}'
+      unit_of_measurement: 'V'
+    switch_washing_machine_today_kwh:
+      friendly_name_template: "{{ washing_machine}} Today's Consumption"
+      value_template: '{{ states.switch.washing_machine.attributes["today_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+
+
+    

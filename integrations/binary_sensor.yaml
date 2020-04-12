@@ -1,0 +1,85 @@
+# for RF Motion Sensor 
+#binary_sensor:
+- platform: mqtt
+  state_topic: "tele/rfbridge/RESULT"
+  name: 'RF Motion'
+  value_template: "{{ value_json['RfReceived']['Data'] }}"
+  payload_on: 'EBD66E'
+  payload_off: 'EBD66Eoff'
+  device_class: motion
+  qos: 1
+  off_delay: 20
+
+- platform: mqtt
+  state_topic: "tele/rfbridge/RESULT"
+  name: 'Alfawise Motion 1'
+  value_template: "{{ value_json['RfReceived']['Data'] }}"
+  payload_on: '8E7926'
+  payload_off: '8E7926off'
+  device_class: motion
+  qos: 1
+  off_delay: 20
+      
+- platform: mqtt
+  state_topic: "tele/rfbridge/RESULT"
+  name: 'Alfawise Motion 2'
+  value_template: "{{ value_json['RfReceived']['Data'] }}"
+  payload_on: '340126'
+  payload_off: '340126off'
+  device_class: motion
+  qos: 1
+  off_delay: 20      
+
+- platform: mqtt
+  name: "RF bridge key A"
+  payload_on: "1EFCB2"
+  payload_off: "1EFCB2_off"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20  
+      
+- platform: mqtt
+  name: "RF bridge key B"
+  payload_on: "1EFCB8"
+  payload_off: "1EFCB8_off"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20
+
+- platform: mqtt
+  name: "RF bridge key C"
+  payload_on: "1EFCB1"
+  payload_off: "1EFCB1_off"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20
+
+- platform: mqtt
+  name: "RF bridge key D"
+  payload_on: "1EFCB4"
+  payload_off: "1EFCB4_off"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20   
+    
+- platform: mqtt
+  name: "RF Door Sensor 1"
+  payload_on: "998999"
+  payload_off: "998999_off"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20   
+
+- platform: mqtt
+  name: "Alfawise Door Sensor 1"
+  payload_on: "032963"
+  payload_off: "032969"
+  device_class: opening
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20  

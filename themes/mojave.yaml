@@ -1,0 +1,67 @@
+#Clear Dark Theme 
+#https://community.home-assistant.io/t/clear-theme-dark/100960
+mojave:
+  # Colors
+  text-color: '#FFD60A'                                                           # Yellow text
+  text-medium-light-color: '#32D74B'                                              # Green text
+  text-medium-color: '#0A84FF'                                                    # Blue text
+  text-dark-color: '#FF375F'                                                      # Pink
+  accent-color: '#FFD60A'                                                         # Orange
+  accent-medium-color: '#BF5AF2'                                                  # Purple
+  background-color: '#2d2d2d'                                                     # Dark grey background
+  background-color-2: '##5B5A5B'                                                   # Light grey background
+  background-card-color: '#1E1E1E'                                                # Brown background
+  border-color: '#AC8E68'                                                         # Brown border
+
+  # Header
+  primary-color: '#AC8E68'                                                        # Background
+  text-primary-color: 'var(--text-color)'                                         # Text
+  
+  # Left Menu
+  paper-listbox-background-color: 'var(--background-color)'                       # Background
+  sidebar-icon-color: 'var(--text-medium-color)'                                  # icons
+  sidebar-selected-icon-color: 'var(--text-medium-light-color)'                   # Selected row icon and background (15%)
+  sidebar-selected-text-color: 'var(--text-medium-light-color)'                                # Selected row label
+
+  # UI
+  paper-card-header-color: 'var(--text-color)'                                    # Title in settings
+  primary-background-color: 'var(--background-color)'                             # Background (also title background in left menu)
+  mdc-theme-primary: 'var(--accent-medium-color)'                                 # Action Buttons (save, restart etc.)
+  
+  # Card
+  paper-card-background-color: 'var(--background-card-color)'                     # Background
+  dark-primary-color: 'var(--text-color)'
+  primary-text-color: 'var(--text-color)'
+  paper-listbox-color: 'var(--text-color)'
+  light-primary-color: 'var(--text-dark-color)'
+  secondary-text-color: 'var(--text-medium-color)'
+  disabled-text-color: 'var(--text-dark-color)'
+  paper-dialog-button-color: 'var(--text-color)'
+  secondary-background-color: 'var(--background-color-2)'                         # Background more info title
+
+  # Icons
+  paper-item-icon-color: '#AC8E68'                                 # Off
+  paper-item-icon-active-color: '#32D74B'                             # On
+  
+  # Switches
+  paper-toggle-button-checked-button-color: 'var(--text-medium-light-color)'      # Knob On
+  paper-toggle-button-checked-bar-color: '#009FFF'                                # Background On
+  paper-toggle-button-unchecked-button-color: 'var(--text-medium-light-color)'    # Knob Off
+  paper-toggle-button-unchecked-bar-color: '#767682'                              # Background Off
+  
+  # Shadows
+  shadow-elevation-2dp_-_box-shadow: 'inset 0px 0px 0px 1px var(--border-color)'
+  shadow-elevation-4dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-6dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-8dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-10dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-12dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-14dp_-_box-shadow: 'var(--shadow-elevation-2dp_-_box-shadow)'
+  shadow-elevation-16dp_-_box-shadow: '0px 0px 0px 3px var(--text-dark-color)'
+  
+  ### Table row ###
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  
+  # App Panel
+  app-toolbar_-_background-color: '#AC8E68'

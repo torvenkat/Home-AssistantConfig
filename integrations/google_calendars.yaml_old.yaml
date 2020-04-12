@@ -1,0 +1,17 @@
+- cal_id: !secret garbage_cal_id
+  entities:
+  - device_id: recycling
+    ignore_availability: true
+    search: "#Recycling"
+    name: Recycling
+    track: true
+  - device_id: garbage
+    ignore_availability: true
+    search: "#Garbage"
+    name: Garbage
+    track: true  
+  - device_id: yardwaste
+    ignore_availability: true
+    search: "#Yard Waste"
+    name: Yard Waste
+    track: true  

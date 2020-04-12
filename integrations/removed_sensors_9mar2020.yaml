@@ -1,0 +1,31 @@
+      
+- platform: miflora
+  mac: 'c4:7c:8d:60:70:32'
+  name: Jasmine
+  monitored_conditions:
+    - temperature
+    - moisture
+    - battery
+    - conductivity
+    - light    
+      
+- platform: miflora
+  mac: 'C4:7C:8D:6A:46:4F'
+  name: Dendrobium
+  monitored_conditions:
+    - temperature
+    - moisture
+    - battery
+    - conductivity
+    - light  
+
+- platform: wunderground
+  api_key: bc96226371774afc96226371771afc5a
+  pws_id: ITORON62
+  monitored_conditions:
+    - temp_c
+    - relative_humidity
+    - dewpoint_c
+    - feelslike_c
+    - precip_1d_mm
+    - precip_1d

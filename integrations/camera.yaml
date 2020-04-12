@@ -1,0 +1,10 @@
+#camera:
+- platform: environment_canada
+  
+- platform: ffmpeg
+  name: yicam
+  input: -rtsp_transport tcp -i rtsp://192.168.10.159/ch0_0.h264
+
+- platform: ffmpeg
+  name: foscam
+  input: -rtsp_transport tcp -i rtsp://venkat:0akv1lle@192.168.10.157:88/videoMain

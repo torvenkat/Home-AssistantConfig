@@ -1,0 +1,78 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Enables the frontend
+frontend:
+ themes: !include_dir_merge_named themes
+ extra_html_url:
+    - /local/hass-bha-icons.html
+
+hacs:
+  token: b6d1ee2a953876dd65665c64f433f062e33303ff
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+media_player: !include integrations/media_player.yaml
+weather: !include integrations/weather.yaml
+light: !include integrations/light.yaml
+cover: !include integrations/cover.yaml
+switch: !include integrations/switch.yaml
+camera: !include integrations/camera.yaml
+sensor: !include integrations/sensor.yaml
+binary_sensor: !include integrations/binary_sensor.yaml
+plant: !include integrations/plant.yaml
+
+
+# Add Z-Wave support
+zwave:
+  usb_path: /dev/ttyUSB0
+  
+# Add Zigbee support
+zha:
+  usb_path: /dev/ttyUSB1
+  database_path: zigbee.db
+  baudrate: 57600
+
+google:
+  client_id: !secret google_clientid
+  client_secret: !secret google_clientsecret
+
+nest:
+  client_id: !secret nest-clientid
+  client_secret: !secret nest_secret
+  sensors:
+    monitored_conditions:
+      - 'co_status'
+      - 'smoke_status'
+      - 'battery_health'
+
+netatmo:
+  client_id: !secret netatmo_clientid
+  client_secret: !secret netatmo_client_secret
+
+stream:
+ffmpeg:
+blink:
+  username: !secret blink_username
+  password: !secret blink_password
+
+influxdb:
+  database: haas
+  username: haas
+  password: MyDatabase
+  ssl: false
+
+plex:
+  host: 192.168.10.234
+  port: 32400
+  ssl: false
+  verify_ssl: false
+  media_player:
+    use_episode_art: true
+    ignore_new_shared_users: false
