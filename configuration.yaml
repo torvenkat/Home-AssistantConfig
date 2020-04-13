@@ -76,3 +76,17 @@ plex:
   media_player:
     use_episode_art: true
     ignore_new_shared_users: false
+
+proxmoxve:
+  - host: 192.168.10.107
+    port: 8006
+    verify_ssl: false
+    realm: pve
+    username: haas
+    password: checkthestatus
+    nodes:
+      - node: pve
+        vms:
+          - 100
+          - 101
+      
