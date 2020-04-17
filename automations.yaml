@@ -9,6 +9,6 @@
     service: light.turn_on
     data:
       brightness: 100
-      rgb_color: [255, 0, 0]
+      rgb_color: [0, 0, 255]
       entity_id:
-        - light.hue_color_2
+        - light.hue_color_light_1

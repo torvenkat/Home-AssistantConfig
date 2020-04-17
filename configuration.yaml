@@ -8,6 +8,30 @@ frontend:
  extra_html_url:
     - /local/hass-bha-icons.html
 
+recorder:
+  purge_keep_days: 5
+  purge_interval: 1
+  #db_url: sqlite:////./config/home-assistant_v2.db
+  exclude:
+    domains:
+      - automation
+      - sun
+      - persistent_notification
+    entities:
+      - persistent_notification.config_entry_discovery
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+      - sensor.jasmine_soil_conductivity
+      - sensor.jasmine_moisture_2
+      - sensor.jasmine_illuminance
+      - sensor.jasmine_battery_level
+      - sensor.jasmine_temperature_2
+      - sensor.dendrobium_soil_conductivity
+      - sensor.dendrobium_moisture_2
+      - sensor.dendrobium_illuminance
+      - sensor.dendrobium_battery_level
+      - sensor.dendrobium_temperature_2
+
 hacs:
   token: b6d1ee2a953876dd65665c64f433f062e33303ff
 # Text to speech

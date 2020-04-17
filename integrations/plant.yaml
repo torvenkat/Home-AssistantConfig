@@ -2,7 +2,6 @@
   Dendrobium:
     sensors:
       moisture: sensor.dendrobium_moisture_2
-      battery:   sensor.dendrobium_battery_level
       temperature: sensor.dendrobium_temperature_2
       conductivity: sensor.dendrobium_soil_conductivity
       brightness: sensor.dendrobium_illuminance
@@ -14,11 +13,10 @@
   
   Jasmine:
     sensors:
-      moisture: sensor.jasmine_moisture
-      battery: sensor.jasmine_battery
-      temperature: sensor.jasmine_temperature
-      conductivity: sensor.jasmine_conductivity
-      brightness: sensor.jasmine_light_intensity
+      moisture: sensor.jasmine_moisture_2
+      temperature: sensor.jasmine_temperature_2
+      conductivity: sensor.jasmine_soil_conductivity
+      brightness: sensor.jasmine_illuminance
     min_moisture: 20
     max_moisture: 80
     min_battery: 15
