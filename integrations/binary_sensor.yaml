@@ -83,3 +83,21 @@
   state_topic: "tele/rfbridge/RESULT"
   value_template: '{{ value_json.RfReceived.Data }}'
   off_delay: 20  
+
+- platform: mqtt
+  name: "Etek A5a"
+  payload_on: "445500"
+  payload_off: "445500_off"
+  device_class: light
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20  
+      
+- platform: mqtt
+  name: "Etek A5b"
+  payload_on: "447500"
+  payload_off: "447500_off"
+  device_class: light
+  state_topic: "tele/rfbridge/RESULT"
+  value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20  

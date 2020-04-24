@@ -51,6 +51,7 @@ camera: !include integrations/camera.yaml
 sensor: !include integrations/sensor.yaml
 binary_sensor: !include integrations/binary_sensor.yaml
 plant: !include integrations/plant.yaml
+tplink: !include integrations/tplink.yaml
 
 
 # Add Z-Wave support
