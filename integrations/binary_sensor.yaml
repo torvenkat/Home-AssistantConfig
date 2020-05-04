@@ -85,19 +85,29 @@
   off_delay: 20  
 
 - platform: mqtt
-  name: "Etek A5a"
-  payload_on: "445500"
-  payload_off: "445500_off"
+  name: "Etek A1a"
+  payload_on: "445530"
+  payload_off: "445530_off"
   device_class: light
   state_topic: "tele/rfbridge/RESULT"
   value_template: '{{ value_json.RfReceived.Data }}'
   off_delay: 20  
       
 - platform: mqtt
-  name: "Etek A5b"
-  payload_on: "447500"
-  payload_off: "447500_off"
+  name: "Etek A1b"
+  payload_on: "445500"
+  payload_off: "445500_off"
   device_class: light
   state_topic: "tele/rfbridge/RESULT"
   value_template: '{{ value_json.RfReceived.Data }}'
+  off_delay: 20  
+
+- platform: mqtt
+  state_topic: "tele/rfbridge/RESULT"
+  name: 'Mailbox'
+  value_template: "{{ value_json['RfReceived']['Data'] }}"
+  payload_on: '998999'
+  payload_off: '998999_off'
+  device_class: opening
+  qos: 1
   off_delay: 20  

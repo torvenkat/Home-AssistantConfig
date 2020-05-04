@@ -6,7 +6,7 @@
   locations: Toronto North, Ontario
 
 - platform: obihai
-  host: 192.168.10.130
+  host: 192.168.10.123
 
 
 
@@ -22,15 +22,6 @@
     - volume_percentage_used
     - cpu_temp
 
-- platform: glances
-  host: 192.168.10.212
-  port: 61209
-  version: 3
-  resources:
-    - 'processor_load'
-    - 'memory_use_percent'
-    - 'disk_use_percent'
-  
 
 - platform: template
   sensors:

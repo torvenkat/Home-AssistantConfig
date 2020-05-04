@@ -3,7 +3,7 @@
   
 - platform: ffmpeg
   name: yicam
-  input: -rtsp_transport tcp -i rtsp://192.168.10.159/ch0_0.h264
+  input: -rtsp_transport tcp -i rtsp://192.168.10.160/ch0_0.h264
 
 - platform: ffmpeg
   name: foscam
