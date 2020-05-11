@@ -1,0 +1,32 @@
+
+	sensor:
+			styles:
+					card:
+							- font-size: 16px
+							- width: 75px
+			tap_action:
+					action: more-info
+			state:
+					- color: orange
+							value: 75
+							id: my_id
+	sensor_humidity:
+			template: sensor
+			icon: 'mdi:weather-rainy'
+			state:
+					- color: 'rgb(255,0,0)'
+							operator: '>'
+							value: 50
+					- color: 'rgb(0,0,255)'
+							operator: <
+							value: 25
+	sensor_test:
+			template: sensor_humidity
+			state:
+					- color: pink
+							id: my_id
+							operator: '>'
+							value: 75
+							styles:
+									name:
+											- color: '#ff0000'
