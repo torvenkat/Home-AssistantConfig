@@ -26,48 +26,69 @@
 - platform: template
   sensors:
     switch_kasa_plug_1_amps:
-      friendly_name_template: "{{ kasa_plug_1}} Current"
+      friendly_name_template: "{{ states.switch.kasa_plug_1}} Current"
       value_template: '{{ states.switch.kasa_plug_1.attributes["current_a"] | float }}'
       unit_of_measurement: 'A'
     switch_kasa_plug_1_watts:
-      friendly_name_template: "{{ kasa_plug_1}} Current Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_1}} Current Consumption"
       value_template: '{{ states.switch.kasa_plug_1.attributes["current_power_w"] | float }}'
       unit_of_measurement: 'W'
     switch_kasa_plug_1_total_kwh:
-      friendly_name_template: "{{ kasa_plug_1}} Total Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_1}} Total Consumption"
       value_template: '{{ states.switch.kasa_plug_1.attributes["total_energy_kwh"] | float }}'
       unit_of_measurement: 'kWh'
     switch_kasa_plug_1_volts:
-      friendly_name_template: "{{ kasa_plug_1}} Voltage"
+      friendly_name_template: "{{ states.switch.kasa_plug_1}} Voltage"
       value_template: '{{ states.switch.kasa_plug_1.attributes["voltage"] | float }}'
       unit_of_measurement: 'V'
     switch_kasa_plug_1_today_kwh:
-      friendly_name_template: "{{ kasa_plug_1}} Today's Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_1}} Today's Consumption"
       value_template: '{{ states.switch.kasa_plug_1.attributes["today_energy_kwh"] | float }}'
       unit_of_measurement: 'kWh'
 
 - platform: template
   sensors:
     switch_kasa_plug_2_amps:
-      friendly_name_template: "{{ kasa_plug_2}} Current"
+      friendly_name_template: "{{ states.switch.kasa_plug_2}} Current"
       value_template: '{{ states.switch.kasa_plug_2.attributes["current_a"] | float }}'
       unit_of_measurement: 'A'
     switch_kasa_plug_2_watts:
-      friendly_name_template: "{{ kasa_plug_2}} Current Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_2}} Current Consumption"
       value_template: '{{ states.switch.kasa_plug_2.attributes["current_power_w"] | float }}'
       unit_of_measurement: 'W'
     switch_kasa_plug_2_total_kwh:
-      friendly_name_template: "{{ kasa_plug_2}} Total Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_2}} Total Consumption"
       value_template: '{{ states.switch.kasa_plug_2.attributes["total_energy_kwh"] | float }}'
       unit_of_measurement: 'kWh'
     switch_kasa_plug_2_volts:
-      friendly_name_template: "{{ kasa_plug_2}} Voltage"
+      friendly_name_template: "{{ states.switch.kasa_plug_2}} Voltage"
       value_template: '{{ states.switch.kasa_plug_2.attributes["voltage"] | float }}'
       unit_of_measurement: 'V'
     switch_kasa_plug_2_today_kwh:
-      friendly_name_template: "{{ kasa_plug_2}} Today's Consumption"
+      friendly_name_template: "{{ states.switch.kasa_plug_2}} Today's Consumption"
       value_template: '{{ states.switch.kasa_plug_2.attributes["today_energy_kwh"] | float }}'
       unit_of_measurement: 'kWh'
 
-
+- platform: template
+  sensors:
+    switch_bed_warmer_amps:
+      friendly_name_template: "{{ states.switch.bed_warmer}} Current"
+      value_template: '{{ states.switch.bed_warmer.attributes["current_a"] | float }}'
+      unit_of_measurement: 'A'
+    switch_bed_warmer_watts:
+      friendly_name_template: "{{ states.switch.bed_warmer}} Current Consumption"
+      value_template: '{{ states.switch.bed_warmer.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+    switch_bed_warmer_total_kwh:
+      friendly_name_template: "{{ states.switch.bed_warmer}} Total Consumption"
+      value_template: '{{ states.switch.bed_warmer.attributes["total_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+    switch_bed_warmer_volts:
+      friendly_name_template: "{{ states.switch.bed_warmer}} Voltage"
+      value_template: '{{ states.switch.bed_warmer.attributes["voltage"] | float }}'
+      unit_of_measurement: 'V'
+    switch_bed_warmer_today_kwh:
+      friendly_name_template: "{{ states.switch.bed_warmer}} Today's Consumption"
+      value_template: '{{ states.switch.bed_warmer.attributes["today_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
     

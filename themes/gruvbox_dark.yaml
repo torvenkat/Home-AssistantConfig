@@ -47,7 +47,7 @@ Gruvbox Dark:
   label-badge-gray: "#a89984"
 
   # Cards
-  ha-card-border-radius: "0px"
+  ha-card-border-radius: "15px"
   ha-card-box-shadow: 0px
   paper-card-background-color: "#3c3836"
   paper-listbox-background-color: "#282828"

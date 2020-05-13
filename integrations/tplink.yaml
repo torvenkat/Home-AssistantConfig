@@ -2,7 +2,12 @@
 discovery: false
 switch:
   - host: 192.168.10.227
+  # Kitchen
   - host: 192.168.10.122
-  - host: 192.168.10.233
-  - host: 192.168.10.139
+  #Breakfast
+  - host: 192.168.10.234
+  #Bed Warmer
+  - host: 192.168.10.141
+  #Kasa1
   - host: 192.168.10.215
+  #Kasa2
