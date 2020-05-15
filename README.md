@@ -1,6 +1,5 @@
 # Home-AssistantConfig
 
-# torvenkat.github.io
 My Home Assistant Installation
 
 Configuration Repositoty: https://github.com/torvenkat/Home-AssistantConfig
