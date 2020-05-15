@@ -1,5 +1,8 @@
 # Home Assistant Config
 
+
+![Home Assistant Integrations](https://github.com/torvenkat/torvenkat.github.io/blob/gh-pages/images/Home_Sep2019-1024x691.png)
+
 My Home Assistant Installation
 
 Configuration Repositoty: https://github.com/torvenkat/Home-AssistantConfig
@@ -11,5 +14,3 @@ Read the documentation at https://torvenkat.github.io
 Hacks, tips, and tricks from my use experience at http://venkat.ca
 
 Have Fun!!!
-
-![Home Assistant Integrations](https://github.com/torvenkat/torvenkat.github.io/blob/gh-pages/images/Home_Sep2019-1024x691.png)
