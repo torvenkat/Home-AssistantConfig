@@ -12,4 +12,4 @@ Hacks, tips, and tricks from my use experience at http://venkat.ca
 
 Have Fun!!!
 
-![]([Home_Sep2019-1024x691.png](https://github.com/torvenkat/torvenkat.github.io/blob/gh-pages/images/Home_Sep2019-1024x691.png))
+![Home Assistant Integrations](https://github.com/torvenkat/torvenkat.github.io/blob/gh-pages/images/Home_Sep2019-1024x691.png)
