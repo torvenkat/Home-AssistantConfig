@@ -102,6 +102,13 @@ plex:
     use_episode_art: true
     ignore_new_shared_users: false
 
+ecowitt:
+  port: 4199
+  #barounit: metric
+  #windunit: metric
+  #rainunit: metrric
+  #windchillunit: hybrid
+
 proxmoxve:
   - host: 192.168.10.107
     port: 8006
