@@ -10,7 +10,7 @@ frontend:
 
 recorder:
   purge_keep_days: 5
-  purge_interval: 1
+  #purge_interval: 1
   #db_url: sqlite:////./config/home-assistant_v2.db
   exclude:
     domains:
@@ -68,14 +68,6 @@ google:
   client_id: !secret google_clientid
   client_secret: !secret google_clientsecret
 
-nest:
-  client_id: !secret nest-clientid
-  client_secret: !secret nest_secret
-  sensors:
-    monitored_conditions:
-      - 'co_status'
-      - 'smoke_status'
-      - 'battery_health'
 
 netatmo:
   client_id: !secret netatmo_clientid
@@ -83,9 +75,7 @@ netatmo:
 
 stream:
 ffmpeg:
-blink:
-  username: !secret blink_username
-  password: !secret blink_password
+
 
 influxdb:
   database: haas
@@ -102,8 +92,8 @@ plex:
     use_episode_art: true
     ignore_new_shared_users: false
 
-ecowitt:
-  port: 4199
+#ecowitt:
+#  port: 4199
   #barounit: metric
   #windunit: metric
   #rainunit: metrric
